@@ -8,10 +8,10 @@ namespace Recursive
 {
     public class Item : BaseTree<Item>
     {
-        public string Id { get; set; }
+        public string Id { get; set; } = null!;
 
-        public string ParentId { get; set; }
+        public string ParentId { get; set; } = null!;
 
-        public List<Item> ChildList { get; set; }
+        public List<Item> ChildList { get; set; } = null!;
     }
 }
